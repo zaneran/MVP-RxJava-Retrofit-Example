@@ -20,6 +20,6 @@ No worries, here comes a very simple example, enough for most use cases in early
 * Model 层 : Model层负责从API获取数据，将结果返回给Presenter层，并且防止和View层有直接联系。
 #### 更多需要完成的任务:
 * 1. Presenter层的Error处理。
-* 2. View层和Presenter层之间的依赖性注入。
+* 2. View层和Presenter层之间的依赖性注入（如使用Dagger 2）。
 ###### 特别感谢DarkSky提供了API作为测试。
 ###### 这个例子设置了两个TextView来展示给定0经度和0纬度的链接的经度和纬度返回值。
