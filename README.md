@@ -1,7 +1,6 @@
 # MVP-RxJava-Retrofit-Example
 
-Most example found in the Internet of MVP, RxJava + Retrofit is a little bit too complex for beginner.
-No worries, here comes a very simple example, enough for most use cases in early stages, especially for beginners.
+This is a very simple example combined with RxJava, Retrofit and MVP design pattern, enough for most use cases in early stages, especially for beginners.
 #### MVP design pattern - 
 * View Layer : Main Activity and Main Interface, Presenter Layer directly contact with Main Interface. Everything referring to logical issues should be concluded in Presenter layer, View layer simply show result in UI.
 * Present Layer : Presenter works as bridge between View Layer and Model Layer. It subscribe result from Retrofit in model layer, subscribe in onResume stage of Activity, and unsubscribe in onPause stage of Activity.(Notice, if unsubscribe process doing too much work like close database reference, unsubscribe in onStop stage to prevent block start of upcoming activity)
