@@ -13,7 +13,7 @@ This is a very simple example combined with RxJava, Retrofit and MVP design patt
 
 
 #### 一个简单可复用的RxJava + Retrofit + MVP的模型。
-#### MVP 设计结构 - 
+#### MVP 设计模式 - 
 * View 层 : 所有逻辑相关的问题都放在Presenter层处理，View层只负责显示结果。
 * Present 层 : Presenter层作为连接View层和Model层的桥梁，它订阅获得了Model层的Retrofit结果，并且在View层的活动生命周期onResume订阅，在onPause取消订阅（注意，如果取消订阅过程中有耗时工作，如关闭数据库的引用，取消订阅需要在onStop进行以免阻碍接下来活动的初始化）
 * Model 层 : Model层负责从API获取数据，将结果返回给Presenter层，并且防止和View层有直接联系。
